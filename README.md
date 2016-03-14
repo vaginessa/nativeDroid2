@@ -8,7 +8,7 @@ jQueryMobile Template inspired by Material Design
 
   **git**
 
-```git clone https://github.com/godesign/nativeDroid2.git```
+```git clone https://github.com/wildhaber/nativeDroid2.git```
 
   **bower**
 
