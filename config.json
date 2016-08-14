@@ -1,0 +1,11 @@
+{
+  "sass" : {
+    "file" : "./src/nativedroid.scss",
+    "outputStyle" : "compressed",
+    "outFile" : "./dist/nativedroid.css"
+  },
+  "path" : {
+    "source" : "src/",
+    "dist" : "dist/"
+  }
+}

@@ -10,9 +10,9 @@ jQueryMobile Template inspired by Material Design
 
 ```git clone https://github.com/wildhaber/nativeDroid2.git```
 
-  **bower**
+  **npm**
 
-```bower install nativeDroid2```
+```npm install nativedroid2```
 
 # Demo & [Documentation](http://nativedroid.scripter.click)
 
@@ -55,7 +55,7 @@ Nice to Know
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Raphael Wildhaber, Godesign Webpublishing GmbH / http://nativedroid.godesign.ch
+Copyright (c) 2016 Raphael Wildhaber, Godesign Webpublishing GmbH / http://nativedroid.godesign.ch
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

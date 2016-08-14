@@ -1,0 +1,114 @@
+/*
+ * Panel
+ */
+
+.ui-panel.ui-panel-open {
+  position:fixed;
+}
+
+.ui-panel-position-left > .ui-panel-inner {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ui-panel-open {
+  max-width: 90%;
+  width: 304px;
+}
+
+.ui-panel-display-overlay {
+  box-shadow: 0px 0px 7px rgba(0,0,0,0.1);
+}
+
+.ui-panel.ui-panel-display-overlay.ui-panel-open {
+  z-index: 2000;
+}
+
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a {
+  font-weight: 400;
+}
+
+.ui-collapsible-heading-toggle {
+  border-bottom: 1px solid #cccccc;
+}
+
+.ui-listview>.ui-li-static, .ui-listview>.ui-li-divider, .ui-listview>li>a.ui-btn {
+  border: 0px;
+}
+
+.ui-collapsible.ui-collapsible {
+  background-color: #f6f6f6;
+}
+.ui-collapsible.ui-collapsible h3 a,
+.ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a:hover {
+  font-weight: 500;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.ui-panel-dismiss {
+  background-color: transparent;
+  -webkit-transition: background 0.8s;
+  -moz-transition: background 0.8s;
+  -ms-transition: background 0.8s;
+  -o-transition: background 0.8s;
+  transition: background 0.8s;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+  background-color: transparent;
+  background-color: rgba(0,0,0,0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #cccccc;
+}
+
+.ui-panel-dismiss.ui-panel-dismiss-open {
+  background-color: rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.ui-collapsible.ui-collapsible-collapsed,
+.ui-page-theme-a .ui-body-inherit.ui-collapsible-content,
+.ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a {
+  background-color: transparent;
+}
+
+.ui-page-theme-a .ui-body-inherit.ui-collapsible-content li > a {
+  text-transform: none;
+}
+
+.ui-collapsible-content > .ui-listview > li > a {
+  padding-left: 1.5em;
+}
+
+.ui-collapsible .ui-collapsible-heading > .ui-icon-carat-d:after {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -ms-transition: -ms-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+
+.ui-collapsible.ui-collapsible-collapsed .ui-collapsible-heading > .ui-icon-carat-d:after {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}

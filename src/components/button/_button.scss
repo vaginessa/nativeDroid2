@@ -1,0 +1,33 @@
+
+
+/*
+ * Button
+ *
+ */
+
+.ui-panel .ui-listview .ui-btn { font-weight: 400; }
+
+.ui-btn,a.ui-btn { text-transform: uppercase; font-weight: 500; color: inherit; }
+.ui-listview > a.ui-btn, .ui-listview a { text-transform: none; }
+
+.ui-btn.ui-btn-icon-left > i.md,
+button.ui-btn > i.md.ui-pull-left { float: left; }
+
+a.ui-btn.ui-btn-icon-left > i.md { margin-left: -1em; }
+
+.ui-btn.ui-btn-icon-right > i.md,
+button.ui-btn > i.md.ui-pull-right { float: right; }
+
+a.ui-btn.ui-btn-icon-right > i.md { margin-right: -1em; }
+
+.ui-btn > i.md,
+button.ui-btn > i.md { float: none; margin: 0px 7px; }
+
+.ui-btn.ui-btn-icon-block > i.zmdi { display: block; }
+
+.ui-btn.ui-btn-fab { border-radius: 50% !important; }
+.ui-btn.ui-btn-fab > i.zmdi { margin: 0px; padding: 0px; }
+
+.ui-btn {
+  margin: 0px;
+}

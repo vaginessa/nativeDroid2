@@ -1,0 +1,74 @@
+
+/*
+ * Sidepanel Profile
+ *
+ */
+
+.nd2-sidepanel-profile {
+  position: relative;
+  margin: -1em -1em 1.5em -1em;
+  padding: 3em 1em 2em 1em;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+}
+
+.nd2-sidepanel-profile:after {
+  position: absolute;
+  content : "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.01) 0%, rgba(0,0,0,0.5) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.01)), color-stop(100%,rgba(0,0,0,0.5)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.5) 100%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.5) 100%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.5) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#000000',GradientType=0 );
+
+}
+
+.nd2-sidepanel-profile .profile-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.nd2-sidepanel-profile .profile-thumbnail {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: -0.8em auto;
+  display: inline-block;
+
+  border: 2px solid rgba(255,255,255,0.05);
+}
+
+.nd2-sidepanel-profile .profile-text {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.nd2-sidepanel-profile .profile-text strong {
+  font-size: 20px;
+  line-height: 1.2em;
+  display: block;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nd2-sidepanel-profile .profile-text .subline {
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  display: block;
+}

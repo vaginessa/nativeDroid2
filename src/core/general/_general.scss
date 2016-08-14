@@ -1,0 +1,61 @@
+body {
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  font-size: 16px;
+
+  opacity: 1;
+  text-shadow: none !important;
+}
+
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body blockquote,
+body a,
+body button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+body.nd2-ready {
+  opacity: 1;
+}
+
+body, input, select, textarea, button, .ui-btn,h1,h2,h3,h4,h5,h6 {
+  font-family: "RobotoDraft","Roboto","Helvetica Neue",sans-serif;
+  font-weight: 400;
+}
+
+.align-right { text-align: right; }
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+
+/*
+ * HR
+ */
+
+hr {
+  display: block;
+  border: 0px;
+  border-top: 1px solid #cccccc;
+  padding: 0px;
+  margin: 1em 0px;
+}
+
+hr.inset {
+  margin: 1em 0px 1em 1em;
+}
+
+.ui-content hr, .ui-panel-inner hr { margin: 1em -1em; }
+
+.ui-panel-inner hr.inset { margin: 1em -1em 1em 0em; }

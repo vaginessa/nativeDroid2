@@ -1,0 +1,73 @@
+{
+  "name": "nativedroid2",
+  "version": "2.0.3",
+  "description": "nativeDroid2 is a jQueryMobile Template inspired by Material Design",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "npm run test:eslint && npm run build && npm run test:jasmine && npm run test:istanbul && npm run test:istanbul:cleanup",
+    "test:local": "npm run test:eslint && npm run build && npm run test:jasmine:formatted",
+    "test:eslint": "./node_modules/.bin/eslint ./src/**/*.js",
+    "test:jasmine": "./node_modules/.bin/jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
+    "test:istanbul": "./node_modules/.bin/istanbul cover test/jasmine/jasmine.js",
+    "test:istanbul:cleanup": "rm -rf ./coverage",
+    "test:jasmine:formatted": "node ./test/jasmine/jasmine.js",
+    "build": "npm run build:babel && npm run build:browserify && npm run build:uglify && npm run build:sass",
+    "build:babel": "./node_modules/.bin/babel --presets es2015,stage-0 -d dist/ src/",
+    "build:browserify": "./node_modules/.bin/browserify index.js -o dist/nativedroid.js -s nativeDroid",
+    "build:uglify": "./node_modules/.bin/uglifyjs  dist/nativedroid.js --output dist/nativedroid.min.js --compress --mangle --screw-ie8",
+    "build:sass": "node ./builder/sass.js",
+    "build:watch": "node ./builder/watcher.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildhaber/nativeDroid2.git"
+  },
+  "keywords": [
+    "jquery",
+    "jquerymobile",
+    "material",
+    "design"
+  ],
+  "author": "Raphael Wildhaber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wildhaber/nativeDroid2/issues"
+  },
+  "homepage": "http://nativedroid.godesign.ch",
+  "engines": {
+    "node": ">= 4.0"
+  },
+  "babel": {},
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "browserify": "^13.0.1",
+    "chokidar": "^1.6.0",
+    "eslint": "^3.0.0",
+    "fs": "0.0.2",
+    "istanbul": "^0.4.4",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "jasmine-spec-reporter": "^2.5.0",
+    "node-sass": "^3.8.0",
+    "path": "^0.12.7",
+    "postcss": "^5.1.2",
+    "shelljs": "^0.7.3",
+    "uglify-js": "^2.7.0"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0",
+    "jquery-mobile": "jquery/jquery-mobile",
+    "jquery-ui": "^1.12.0",
+    "material-design-iconic-font": "^2.2.0",
+    "node-waves": "fians/Waves",
+    "wowjs": "^1.1.3"
+  }
+}

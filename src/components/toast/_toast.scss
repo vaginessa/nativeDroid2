@@ -1,0 +1,71 @@
+
+/*
+*	Toasts
+*/
+
+.nd2-toast {
+  display: block;
+
+  background-color: #323232;
+  line-height: 48px;
+  width: 450px;
+
+  max-width: 100%;
+
+  overflow: hidden;
+  max-height: 48px;
+  white-space: nowrap;
+
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+
+  -webkit-transform: translate(-50%,0%);
+  -ms-transform: translate(-50%,0%);
+  -moz-transform: translate(-50%,0%);
+  -o-transform: translate(-50%,0%);
+  transform: translate(-50%,0%);
+
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+
+  color: #ffffff;
+  font-size: 14px;
+
+  z-index: 2001;
+
+}
+
+.nd2-toast-wrapper { position: relative; }
+
+.nd2-toast.no-action {
+  padding: 0px 24px 0px 0px;
+}
+
+.nd2-toast.nd2-toast-off {
+  bottom: -150px;
+}
+
+.nd2-toast .nd2-toast-message {
+  display: inline-block;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px 0px 0px 24px;
+}
+
+.nd2-toast .nd2-toast-action {
+  display: inline-block;
+  margin-left: 48px;
+  position: absolute;
+  right: 24px;
+}
+
+.nd2-toast .nd2-toast-action .ui-btn {
+  padding: 0px;
+  border: 0px solid transparent;
+  background-color: #323232;
+}

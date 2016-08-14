@@ -1,0 +1,86 @@
+
+/*
+ * Bottom Sheet Panel
+ */
+
+.ui-panel.ui-panel-position-bottom {
+  position: fixed;
+  top: auto;
+  bottom: -100%;
+  left: 0px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 75px;
+
+  visibility: visible;
+  clip: initial;
+
+}
+
+.ui-bottom-sheet-list .row > * {
+  width: 100%;
+}
+
+.ui-bottom-sheet-list .ui-bottom-sheet-link {
+  display: block;
+  text-align: left;
+  margin: 0px;
+}
+
+.ui-bottom-sheet-list .ui-bottom-sheet-link .zmdi {
+  font-size: 1em;
+  display: inline-block;
+  margin-right: 7px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.ui-bottom-sheet-list .ui-bottom-sheet-link strong {
+  display: inline-block;
+  font-weight: 600;
+}
+
+
+.ui-panel-position-bottom {
+
+  -webkit-transition: bottom 0.4s, top 0.4s;
+  -moz-transition: bottom 0.4s, top 0.4s;
+  -ms-transition: bottom 0.4s, top 0.4s;
+  -o-transition: bottom 0.4s, top 0.4s;
+  transition: all 0.4s;
+
+}
+
+.ui-bottom-sheet-link {
+  display: inline-block;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none !important;
+}
+
+.ui-bottom-sheet-link .zmdi {
+  display: block;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.ui-bottom-sheet-link strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.ui-panel-position-bottom.ui-panel-open {
+  top: auto;
+  bottom: 0px;
+}
+
+.ui-panel.ui-panel-position-bottom.ui-body-inherit.ui-panel-open {
+  min-height: 75px;
+}

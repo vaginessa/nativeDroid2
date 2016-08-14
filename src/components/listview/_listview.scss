@@ -1,0 +1,65 @@
+
+/*
+ * Listview
+ */
+
+.ui-listview {
+  margin: 1em 0px;
+}
+
+.ui-listview .ui-li-divider {
+  padding: 7px 1em;
+  background-color: transparent;
+  color: rgba(0,0,0, 0.54);
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.ui-panel-inner > .ui-listview {
+  margin: 0px -1em;
+}
+
+.ui-panel-inner > .ui-listview > .ui-li-divider {
+  background-color: transparent;
+  color: rgba(0,0,0, 0.54);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.ui-listview .ui-li-has-thumb > img:first-child,
+.ui-listview .ui-li-has-thumb > .ui-btn > img:first-child {
+  padding: auto;
+  width: 100%;
+  height: auto;
+  margin: auto auto;
+  left: 1em;
+}
+
+.ui-listview img.ui-thumbnail.ui-thumbnail-circular,
+.ui-listview img.ui-thumbnail.ui-thumbnail-circular {
+  border-radius: 50% !important;
+  overflow: hidden;
+
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+
+}
+
+.ui-listview > li h1, .ui-listview > li h2, .ui-listview > li h3, .ui-listview > li h4, .ui-listview > li h5, .ui-listview > li h6, .ui-listview > li p {
+  /*	margin: 0.45em 28px;*/
+  text-transform: none;
+}
+
+.ui-listview > li p {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+}
+
+.ui-content .ui-listview {
+  margin-bottom: 1em;
+}
