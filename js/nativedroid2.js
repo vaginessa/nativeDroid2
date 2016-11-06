@@ -303,7 +303,7 @@
         }
     });
 
-    $(document).bind("pagecreate", function(e) {
+    $(document).bind("pagebeforeshow", function(e) {
         $(document).trigger("includebeforecreate");
         return $("[data-role='nd2tabs']", e.target).tabs();
     });
